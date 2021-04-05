@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9A0D0BB-10CC-1833-78F1-2258732D8D2C" schemaObject="476360AA-00BD-5D19-5468-2955C7CFBAB1" name="ACCOUNT_HOLDER">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>ACCOUNT_HOLDER</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_ID" id="41751138-24B2-84C0-AE0C-9F9E14DFA8B3">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>ACCOUNT_HOLDER</sourceObjSchema>
+<sourceObjName>CUSTOMER_ID</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B311AF1-6E10-3DA0-5C1C-5E992D1F354A" referredColumn="0085105F-7FEF-32CC-A667-5DE22CF24F65"/>
+</associations>
+</Column>
+<Column name="ACCOUNT_NUMBER" id="245DF322-1CED-2369-0534-EF232B1529F2">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>ACCOUNT_HOLDER</sourceObjSchema>
+<sourceObjName>ACCOUNT_NUMBER</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC1268BD-21C8-5103-4D88-E4CF8EE1BBEB" referredColumn="004779B0-4418-E2E7-150A-AFEA0F3776C8"/>
+</associations>
+</Column>
+<Column name="ACCOUNT_ROLE" id="7D22AB97-FC69-9C61-894F-086A3351F925">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>ACCOUNT_HOLDER</sourceObjSchema>
+<sourceObjName>ACCOUNT_ROLE</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E38506A6-B046-0171-DE2B-D6B43A9B8028" name="ACCOUNT_HOLDER_PK">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>ACCOUNT_OWNERSHIP_PK</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41751138-24B2-84C0-AE0C-9F9E14DFA8B3"/>
+<colUsage columnID="245DF322-1CED-2369-0534-EF232B1529F2"/>
+<colUsage columnID="7D22AB97-FC69-9C61-894F-086A3351F925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B3379CA-710D-0AC4-1845-CB2824250C16" schemaObject="476360AA-00BD-5D19-5468-2955C7CFBAB1" name="ACCOUNT_HOLDER_PK">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>ACCOUNT_OWNERSHIP_PK</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41751138-24B2-84C0-AE0C-9F9E14DFA8B3"/>
+<colUsage columnID="245DF322-1CED-2369-0534-EF232B1529F2"/>
+<colUsage columnID="7D22AB97-FC69-9C61-894F-086A3351F925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47C7D6BF-5A7F-5A75-6E4D-08C0F93C2C24" name="ACCOUNT_HOLDER_FK1">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41751138-24B2-84C0-AE0C-9F9E14DFA8B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC6F7A90-7EB2-CE5F-9C24-0AC481E45C25" name="ACCOUNT_HOLDER_FK2">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="245DF322-1CED-2369-0534-EF232B1529F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

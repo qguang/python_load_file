@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9741559C-9894-DDD2-D5FC-C2F282800407" schemaObject="476360AA-00BD-5D19-5468-2955C7CFBAB1" name="TRANSACTION">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>TRANSACTION</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCOUNT_NUMBER" id="FF0002B9-179A-53C9-D7D2-396DB3FD9820">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>ACCOUNT_NUMBER</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E00C6C1A-444A-FB6A-7AA3-9817E626F86E" referredColumn="004779B0-4418-E2E7-150A-AFEA0F3776C8"/>
+</associations>
+</Column>
+<Column name="TRANSACTION_DATETIME" id="8FE0816B-7316-6E91-E286-68538B4EB07E">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>TRANSACTION_DATETIME</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="6869E8F7-F602-18F1-38BC-66C025177573">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>25</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,25,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSACTION_DESC" id="BB97A7C5-0F8C-992C-C4DB-873120C9C3B4">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>TRANSACTION</sourceObjSchema>
+<sourceObjName>TRANSACTION_DESC</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4E62355-4B77-E2BE-A1D7-2E7DDE533E50" name="TRANSACTION_PK">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>TRANSACTION_PK</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0002B9-179A-53C9-D7D2-396DB3FD9820"/>
+<colUsage columnID="8FE0816B-7316-6E91-E286-68538B4EB07E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0511D626-6F2C-2001-6FD7-3A326B465760" schemaObject="476360AA-00BD-5D19-5468-2955C7CFBAB1" name="TRANSACTION_PK">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>TRANSACTION_PK</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0002B9-179A-53C9-D7D2-396DB3FD9820"/>
+<colUsage columnID="8FE0816B-7316-6E91-E286-68538B4EB07E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C05F452F-8FA2-5321-0E43-D6D892BCD48B" name="TRANSACTION_FK1">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF0002B9-179A-53C9-D7D2-396DB3FD9820"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

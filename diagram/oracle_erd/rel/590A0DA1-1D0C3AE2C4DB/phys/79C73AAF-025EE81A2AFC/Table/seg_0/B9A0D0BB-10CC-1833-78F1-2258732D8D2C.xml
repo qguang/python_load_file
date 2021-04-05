@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACCOUNT_HOLDER" directorySegmentName="seg_0" id="B9A0D0BB-10CC-1833-78F1-2258732D8D2C">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<schemaObject>476360AA-00BD-5D19-5468-2955C7CFBAB1</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6E72259C-51E1-E9F4-6701-6EB7D8CC6605</segment>
+<tableSpace>2F4734D7-281B-2A71-44A8-7D094E5038E8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ACCOUNT_NUMBER" id="245DF322-1CED-2369-0534-EF232B1529F2">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_ID" id="41751138-24B2-84C0-AE0C-9F9E14DFA8B3">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ROLE" id="7D22AB97-FC69-9C61-894F-086A3351F925">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ACCOUNT_HOLDER_PK" id="8B3379CA-710D-0AC4-1845-CB2824250C16">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<schemaObject>476360AA-00BD-5D19-5468-2955C7CFBAB1</schemaObject>
+<segment>DFDCAD3A-2275-079C-82A2-0EF94CAC33D9</segment>
+<tableSpace>2F4734D7-281B-2A71-44A8-7D094E5038E8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ACCOUNT_HOLDER_FK1" id="47C7D6BF-5A7F-5A75-6E4D-08C0F93C2C24">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ACCOUNT_HOLDER_FK2" id="AC6F7A90-7EB2-CE5F-9C24-0AC481E45C25">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACCOUNT_HOLDER_PK" id="E38506A6-B046-0171-DE2B-D6B43A9B8028">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<segment>DFDCAD3A-2275-079C-82A2-0EF94CAC33D9</segment>
+<tableSpace>2F4734D7-281B-2A71-44A8-7D094E5038E8</tableSpace>
+<existingIndex>8B3379CA-710D-0AC4-1845-CB2824250C16</existingIndex>
+<indexSegment>DFDCAD3A-2275-079C-82A2-0EF94CAC33D9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

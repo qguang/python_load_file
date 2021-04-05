@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1759C3AF-6E67-2C50-C5F4-627FEF1F3B26" schemaObject="476360AA-00BD-5D19-5468-2955C7CFBAB1" name="CUSTOMER_ADDRESS">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>CUSTOMER_ADDRESS</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_ID" id="CDE8CEA1-32B4-AB96-C845-B3D8C268C6AD">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>CUSTOMER_ADDRESS</sourceObjSchema>
+<sourceObjName>CUSTOMER_ID</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFA27759-48CC-829E-8068-5FEFBF8E97AF" referredColumn="0085105F-7FEF-32CC-A667-5DE22CF24F65"/>
+</associations>
+</Column>
+<Column name="ADDRESS_TYPE" id="B2432A7C-5E52-99C8-CD22-ED77C14C342B">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>CUSTOMER_ADDRESS</sourceObjSchema>
+<sourceObjName>ADDRESS_TYPE</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="8A180D7A-630A-8A34-7250-DF67D6DDA015">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>CUSTOMER_ADDRESS</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67A4C3A1-9E83-1CAE-8B49-98A2B1EFE9A4" name="CUSTOMER_ADDRESS_PK">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>CUSTOMER_ADDRESS_PK</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDE8CEA1-32B4-AB96-C845-B3D8C268C6AD"/>
+<colUsage columnID="B2432A7C-5E52-99C8-CD22-ED77C14C342B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20322C14-0641-0369-194E-B33C01BA59FC" schemaObject="476360AA-00BD-5D19-5468-2955C7CFBAB1" name="CUSTOMER_ADDRESS_PK">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>CUSTOMER_ADDRESS_PK</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:42 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDE8CEA1-32B4-AB96-C845-B3D8C268C6AD"/>
+<colUsage columnID="B2432A7C-5E52-99C8-CD22-ED77C14C342B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D473E616-E780-BA16-9F87-49BBED301C95" name="CUSTOMER_ADDRESS_FK1">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDE8CEA1-32B4-AB96-C845-B3D8C268C6AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

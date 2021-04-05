@@ -1,0 +1,14 @@
+db_config:
+  sandpit: # env_name
+    db_name: test
+    replica_set: rs_falcon
+    hosts:
+      - host: d-rh7-2
+        port: 27017
+    username: mongodb_admin
+    password: mongodb
+    auth_source: admin
+    auth_mechanism: SCRAM-SHA-256
+    use_ssl: False
+    ssl_certificate_file: ""
+    ssl_ca_file: ""

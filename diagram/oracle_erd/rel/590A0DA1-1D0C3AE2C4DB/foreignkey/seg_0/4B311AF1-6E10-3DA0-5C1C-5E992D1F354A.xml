@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4B311AF1-6E10-3DA0-5C1C-5E992D1F354A" containerWithKeyObject="B9A0D0BB-10CC-1833-78F1-2258732D8D2C" localFKIndex="47C7D6BF-5A7F-5A75-6E4D-08C0F93C2C24" name="ACCOUNT_HOLDER_FK1">
+<sourceConnName>PDB - ORCL - OCEAN_STUDIO_III</sourceConnName>
+<sourceObjSchema>OCEAN_STUDIO_III</sourceObjSchema>
+<sourceObjName>ACCOUNT_HOLDER_FK1</sourceObjName>
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:44 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<referredTableLongName>OCEAN_STUDIO_III.CUSTOMER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DAB681C-B9E4-43D9-0694-59F606120253</referredTableID>
+<keyObject>087A35D0-6F05-3941-274D-A6A707B3E960</keyObject>
+<referredKeyID>087A35D0-6F05-3941-274D-A6A707B3E960</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CUSTOMER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

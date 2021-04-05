@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="oracle_erd" id="ED62D2F4-7732-CFAC-9CE1-214933FD5A24" version="3.5">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:01:11 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ED62D2F4-7732-CFAC-9CE1-214933FD5A24</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D0E240EB-EB24-E572-30C4-9597BA6E57AC">
+<designStoragePath>/Users/qiugua/GIT_REPO/python_load_file/diagram</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="12BCA86E-2BA7-8A70-4B9B-AECA733444D9">
+<designStoragePath>/Users/qiugua/GIT_REPO/python_load_file/diagram</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

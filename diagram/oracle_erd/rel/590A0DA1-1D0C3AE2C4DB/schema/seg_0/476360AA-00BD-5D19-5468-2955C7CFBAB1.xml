@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="OCEAN_STUDIO_III" directorySegmentName="seg_0" id="476360AA-00BD-5D19-5468-2955C7CFBAB1">
+<createdBy>qiugua</createdBy>
+<createdTime>2021-04-05 04:02:41 UTC</createdTime>
+<ownerDesignName>oracle_erd</ownerDesignName>
+<importedID>BADFC739-30F4-00CC-0BC8-744E3918918D</importedID>
+</SchemaObject>
