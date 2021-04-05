@@ -7,13 +7,13 @@ import json
 
 # to be replaced by input parameter
 env_name = 'sandpit'
-input_file='/Users/qiugua/GIT_REPO/realpython_materials/python-contact-book/data_load/incoming/LIFPOLData20210220.dat'
+input_file=''
 input_file_header=()
 db=None
 chunk_size = 5
 idx=0
 # We want all data initially loaded as str. the automatic data type detection can cause issue, i.e. remove leading zero
-input_file_data_type = {'D': 'str', 'ProductCode': 'str', 'ProductDescription': 'str', 'PolicyName': 'str', 'PolicyNumber': 'str', 'PolicyStatus': 'str', 'OpenDate': 'str', 'CancellationDate': 'str', 'PolicyStatusChange': 'str', 'LoanNumber': 'str', 'LoanType': 'str', 'OriginalLoanAmount': 'str', 'InsuredPercentage': 'str', 'ContinuationOnCancel': 'str', 'PaymentMethod': 'str', 'PaymentFrequency': 'str', 'NextPaymentDate': 'str', 'BilledToDate': 'str', 'NextPaymentAmount': 'str', 'AgentId': 'str', 'AgentType': 'str', 'LastUpdateDate': 'str', 'OSCI': 'str', 'OwnerName': 'str', 'OwnerRole': 'str', 'ActionStatus': 'str', 'BenefitId': 'str', 'BeneficiaryName': 'str', 'BenefitAmount': 'str', 'BenefitCode': 'str', 'BenefitText': 'str', 'BenefitLastUpdateDate                                                               ': 'str'}
+input_file_data_type = {'D': 'str' }
 
 df = pd.read_csv(input_file, sep='\s*\|\s*', engine='python', header =1)
 df.head(10) # df.tail(10)
@@ -34,7 +34,6 @@ def validate_input_file_heaer(input_file_header):
 
 input_file_header = get_input_file_header()
 
-#for df in pd.read_csv(input_file,sep='\s*\|\s*', engine='python',header =1, chunksize=chunk_size, dtype= input_file_data_type):
 for df in pd.read_csv(input_file,sep='|',header =1, chunksize=chunk_size, dtype= input_file_data_type):
     idx += 1
     print(str(idx) + 'what------------')
@@ -54,19 +53,3 @@ for df in pd.read_csv(input_file,sep='|',header =1, chunksize=chunk_size, dtype=
 
 
 
-
-
-#if db == None:
-#    db = database.get_db(app_config['db_config'][env_name])
-#    print(db)
-#
-#print(db.list_collection_names())
-
-#mongo_temp_dict = {
-    #        '_id': id,
-    #        'ProductCode': row['ProductCode'] , 'ProductDescription': row['ProductDescription'], 
-    #        'PolicyNumber': row['PolicyNumber'], 'PolicyStatus': row['PolicyStatus'], 
-    #        'OpenDate': datetime.strptime(row['OpenDate'], "%Y-%m-%d"), 
-    #         'BenefitAmount': Decimal128(decimal.Decimal(row['BenefitAmount'])), 
-    #        'LastUpdateDate': syd_timezone.localize(datetime.strptime(row['LastUpdateDate'], "%Y-%m-%dT%H:%M:%S"))
-    #    }
