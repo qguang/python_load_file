@@ -1,12 +1,40 @@
 # A POC for loading 3 csv files into MongoDB
 
+## Testing env
+- d1: run jupyter note book
+- d2: MongoDB, LDAP, KMIP, PostgreSQL. As I don't install these sofeware on my host machine, the port are mapped as they are, i.e. 27017 to 27017
+- d orcl: oracle 12.2 database
+- host machine: SqlDeveloper, VS code, Python3 (venv)
+
+```bash
+                ┌───────────────────────────────────────────────────┐
+                │                                                   │
+                │ ┌─────────────┐  ┌─────────────┐  ┌─────────────┐ │
+                │ │             │  │             │  │             │ │
+                │ │    d1       │  │      d2     │  │    d orcl   │ │
+                │ └─────────────┘  └─────────────┘  └─────────────┘ │
+                │                                                   │
+                │   SqlDeveloper, VS code, Python 3                 │
+                │                                 host machine      │
+                └───────────────────────────────────────────────────┘
+```
+
 ## Plan
 - design layout
 - Read config and parse configure file
 - connect to DB
 - read file and load into DB with simple json structure
-    - load simple file
+    - prepare client file 1000 records, keep script to prepare it
+    - load client file
     - load file with relationship
+
+## Execution
+- Create RDBMS table in oracle 
+    - scripts/oracle_00010_create_table.sql
+- Prepare *customer* data in oracle and load into MongoDB
+    - prepare: scripts/oracle_00020_prepare_data_customer.sql
+    - load: note/load_customer.ipynb
+
 
 ## Directory layout
 

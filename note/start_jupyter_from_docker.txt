@@ -1,0 +1,22 @@
+#
+# docker 1: start up jupyter
+#
+
+d1
+cd /GIT_REPO/python_load_file
+jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
+
+#
+# access from host machine
+#
+http://127.0.0.1:8888/tree
+
+
+
+
+#
+# download package
+#
+
+pip3 download pandas
+#pip3 install --find-links /GIT_REPO/guang.qiu.project/mongoDb/load_csv/ttt

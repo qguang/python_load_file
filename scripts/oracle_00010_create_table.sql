@@ -29,7 +29,7 @@ create table account
 (
     account_number varchar2(20) not null,
     account_type varchar2(20) not null,
-    closing_balance number(23,2),
+    closing_balance number(25,2),
     constraint account_pk primary key (account_number)
 );
 
