@@ -57,13 +57,14 @@ To run **data_load**, you need to download the source code. Then open a terminal
 ```sh
 $ cd python_data_load/
 $ python3 -m venv .venv
-$ source .venv/bin/activate
+$ source venv/bin/activate
 (venv) $
 ```
 
 2. Install the dependencies
 
 ```sh
+cd python_data_load/data_load
 (venv) $ python3 -m pip install -r requirements.txt
 ```
 

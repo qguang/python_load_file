@@ -1,55 +1,40 @@
 ##!/usr/bin/env python3
 
-from app_config import app_config
+from app_config import APP_BASEDIR, APP_CONFIG
 import database
 import pandas as pd
 import json
+import os
+from datetime import datetime
+
+import pprint
+
 
 # to be replaced by input parameter
-env_name = 'sandpit'
-input_file=''
-input_file_header=()
-db=None
-chunk_size = 5
-idx=0
-# We want all data initially loaded as str. the automatic data type detection can cause issue, i.e. remove leading zero
-input_file_data_type = {'D': 'str' }
-
-df = pd.read_csv(input_file, sep='\s*\|\s*', engine='python', header =1)
-df.head(10) # df.tail(10)
-
-def get_input_file_header():
-    '''
-    read the very first line of incoming file to get file header (not csv header)
-    '''
-    df=pd.read_csv(input_file,sep='|', nrows=1,header=None)
-    input_file_header=(df.iloc[0,0], df.iloc[0,1], df.iloc[0,2])
-
-def validate_input_file_heaer(input_file_header):
-    '''
-    validate input file header for date time
-    '''
-    pass
-    #print(input_file_header[0], input_file_header[1], input_file_header[2])
-
-input_file_header = get_input_file_header()
-
-for df in pd.read_csv(input_file,sep='|',header =1, chunksize=chunk_size, dtype= input_file_data_type):
-    idx += 1
-    print(str(idx) + 'what------------')
-    for dt_key, dt_value in input_file_data_type.items():
-        if dt_value == 'str':
-            df[dt_key] = df[dt_key].str.strip()
-
-    for df_idx, df_row in df.iterrows():
-        print(str(df_idx) + '|' + df_row['D'] + '|' + df_row['OSCI'] + '|' + df_row['ProductDescription'] + '|' + df_row['PolicyName'] + '|' + df_row['PolicyStatus'] + '|')
-    
-    break
-    #print(df['D'] + ' ' + df['OSCI'] + ' ' + df['ProductDescription'])
-    doc1 = {"test": "this is a good one"}
-    doc2 = {"test": "this is also a good one"}
-    if idx == 2:
-        break
+ENV_NAME='sandpit'
+incoming_dir=os.path.join(APP_BASEDIR, 'incoming')
+incoming_files={
+    'customer': os.path.join(incoming_dir,'customer.csv')
+}
 
 
+mongo_db=database.get_db(APP_CONFIG[ENV_NAME]['db_config'])
+customer_collection = mongo_db['customer']
 
+# load CSV
+df_customer = pd.read_csv(incoming_files['customer'], sep=',', header =0)
+df_customer.rename(columns=lambda x: x.lower(), inplace=True)
+df_customer['dob'] = df_customer['dob'].apply(lambda x: datetime.strptime(x, "%Y-%m-%d %H:%M:%S"))
+
+# transform
+temp_json_result=df_customer.to_json(orient='records')
+parsed_json = json.loads(temp_json_result)
+
+# insert into DB
+mongodb_result=None
+customer_collection.delete_many({})
+mongodb_result=customer_collection.insert_many(parsed_json)
+
+print(len(mongodb_result.inserted_ids))
+
+#pprint.pprint(parsed_json)

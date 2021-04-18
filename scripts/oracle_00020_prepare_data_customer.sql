@@ -21,6 +21,8 @@ select 'C'||lpad(l, 6, '0')  as customer_id,
 from  level_vw
 where l > 6;
 
+commit;
+
 
 
 

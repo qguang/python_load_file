@@ -1,6 +1,7 @@
-db_config:
-  sandpit: # env_name
-    db_name: test
+
+sandpit: # env name
+  db_config:
+    db_name: ocean_studio_III
     replica_set: rs_falcon
     hosts:
       - host: d-rh7-2
